@@ -2,7 +2,7 @@ from fastapi import FastAPI
 
 app = FastAPI()
 
-@app.get("/")
+@app.post("/")
 def ret_square1(num: int):
 	return num*num
 	
